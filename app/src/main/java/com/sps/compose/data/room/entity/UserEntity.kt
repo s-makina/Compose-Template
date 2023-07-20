@@ -13,6 +13,7 @@ data class UserEntity(
     val email: String,
     val phone: String?,
     val token: String?,
+    val image: String?,
     val code: String,
     val last_logged: Boolean = false
 //    val roles: List<Role>

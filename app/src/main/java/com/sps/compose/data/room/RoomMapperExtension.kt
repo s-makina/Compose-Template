@@ -10,6 +10,7 @@ fun UserDto.toUser(): User {
         name = name,
         email = email,
         phone = phone,
+        image = image,
         token = token,
         code = code,
         roles = roles
@@ -20,6 +21,7 @@ fun UserEntity.toUser(): User {
         id = id,
         name = name,
         email = email,
+        image = image,
         phone = phone,
         token = token,
         code = code,
@@ -34,6 +36,7 @@ fun UserDto.toUserEntity(): UserEntity {
         email = email,
         phone = phone,
         token = token,
+        image = image,
         code = code,
 //        roles = roles
     )
@@ -45,6 +48,7 @@ fun User.toUserEntity(): UserEntity {
         name = name,
         email = email,
         phone = phone,
+        image = image,
         token = token,
         code = code,
 //        roles = roles

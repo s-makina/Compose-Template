@@ -11,6 +11,7 @@ class UserDto(
     val phone: String?,
     val token: String?,
     val code: String,
+    val image: String?,
     val my_credit: String,
     val credit: Double,
     val description: String?,

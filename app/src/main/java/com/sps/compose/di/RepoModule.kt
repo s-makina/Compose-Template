@@ -1,5 +1,6 @@
 package com.sps.compose.di
 
+import com.sps.compose.data.repo.TestRepo
 import com.sps.compose.data.repo.UserRepo
 import com.sps.compose.data.retrofit.RetrofitInterface
 import com.sps.compose.data.room.dao.UserDao
@@ -16,4 +17,8 @@ class RepoModule {
     @Provides
     fun provideUserRepo(retrofitInterface: RetrofitInterface, userDao: UserDao) =
         UserRepo(retrofitInterface = retrofitInterface, userDao)
+
+    @Provides
+    fun provideTestRepo(retrofitInterface: RetrofitInterface) =
+        TestRepo(retrofitInterface = retrofitInterface)
 }

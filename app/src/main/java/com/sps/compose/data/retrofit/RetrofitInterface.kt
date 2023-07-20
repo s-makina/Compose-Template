@@ -1,6 +1,7 @@
 package com.sps.compose.data.retrofit
 
 import com.sps.compose.data.retrofit.dto.ApiResponseDto
+import okhttp3.ResponseBody
 import retrofit2.http.*
 
 interface RetrofitInterface {
@@ -19,4 +20,7 @@ interface RetrofitInterface {
         @Field("email") email: String,
         @Field("password") password: String,
     ): ApiResponseDto
+
+    @POST("test")
+    suspend fun test(): ResponseBody
 }
