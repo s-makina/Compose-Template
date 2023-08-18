@@ -1,0 +1,171 @@
+{
+  "name": "sample_component",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "kXop6wukhPk8vu6WBbwhX7",
+    "node": "1:1047",
+    "version": "3846158770",
+    "component-id": "a128a95e45be199a638b4b16da2faaa5482934e8"
+  },
+  "default": "Sample Component",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Button"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      }
+    ],
+    "modes": {
+      "Sample Component": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Button",
+              "Rectangle 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Button",
+            "padding": {
+              "top": "6.0",
+              "bottom": "6.0"
+            },
+            "margin": {
+              "left": "29.5",
+              "right": "93.5",
+              "bottom": "211.99899291992188"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.18823529411764706",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "11.0",
+              "offset-x": "0.0",
+              "offset-y": "3.75",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onClick",
+            "children": "$Button",
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 1",
+            "margin": {
+              "top": "82.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Button": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Sample Component",
+      "size": {
+        "width": 217.0,
+        "height": 260.0
+      },
+      "parameters": {
+        "Button": [
+          {
+            "type": "group",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 0.001007080078125
+              }
+            },
+            "is-structured": false,
+            "clip-content": false
+          },
+          {
+            "type": "group",
+            "padding": {
+              "left": "16.0",
+              "top": "8.0",
+              "right": "16.0",
+              "bottom": "8.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 36.0
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              {
+                "type": "text",
+                "font-weight": 500.0,
+                "color": {
+                  "alpha": "1.0",
+                  "hue": "0.0",
+                  "saturation": "0.0",
+                  "value": "1.0"
+                },
+                "text-content": "BUTTON",
+                "overflow": "visible",
+                "text-align": "left",
+                "text-align-vertical": "center",
+                "letter-spacing": 1.5,
+                "line-height": 1.7142857360839843,
+                "case": "upper"
+              }
+            ],
+            "clip-content": false
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
